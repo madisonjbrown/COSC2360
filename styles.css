@@ -1,6 +1,6 @@
-/*  JavaScript 7th Edition
+/*  JavaScript 6th Edition
     Chapter 1
-    Hands-on Project 1-2 
+    Hands-on Project 1-5
 
     Filename: styles.css
 */
@@ -42,7 +42,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
    line-height: 1;
-   max-width: 960px;
+   max-width: 640px;
    background: white;
    margin: 0 auto;
    font-family: Arial, Helvetica, sans-serif; 
@@ -63,7 +63,7 @@ ol, ul {
 
 /* page header */
 header {
-   background: #04819E;
+   background: #329D27;
    width: 100%;
    color: #FFFFFF;
    font-size: 48px;
@@ -74,32 +74,15 @@ header {
 
 /* main content */
 article {
-   width: 960px;
+   width: 640px;
    text-align: center;
-   background: #BF7730;
-   padding-bottom: 20px;
+   background: ivory;
+   padding: 20px;
 }
 
-article h2 {
+h2 {
    font-weight: bold;
-   font-size: 24px;
-   padding: 10px;
-}
-
-article table {
-   margin: 0 auto;
-   border: 1px solid black;
-   border-collapse: collapse;
-   background: #FFB873;
-}
-
-article table th, article table td {
-   padding: 5px 10px;
-   border: 1px solid black;
-}
-
-article table th {
-   font-weight: bold;
+   font-size: 30px;
    text-align: center;
-   border-bottom: 3px solid black;
 }
+
