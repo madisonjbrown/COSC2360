@@ -72,7 +72,7 @@ function showAll(selectList) {
 function filterSelect(selectList, category) {
     let options = selectList.options;
     let optionLength = options.length;
-    for (let i = 0; i < options.length; i++) {
+    for (let i = 0; i < optionLength; i++) {
         if(options[i].className === category) {
             options[i].style.display = "block";
         } else {
@@ -83,5 +83,5 @@ function filterSelect(selectList, category) {
 
 // Create on onclick event handler for the selectVehicle button
 selectVehicle.onclick = function() {
-    document.getElementById("vehicle").textContent = make.text + " " + model.text + " " + trim.text;
+    vehicle.textContent = make.options[make.selectedIndex].text + " " + model.options[model.selectedIndex].text + " " + trim.options[trim.selectedIndex].text;
 };
