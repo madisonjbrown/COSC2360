@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+      JavaScript 7th Edition
+      Midterm
+      Midterm Project
+
+      Author: Madison Brown
+      Date:   10/12/24
+
+      Filename: midtermproject.html
+    -->
+
+    <title>Crust & Crumb Pizzeria</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="midtermproject.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Welcome to Crust & Crumb Pizzeria
+        </h1>
+        <h3>
+            Follow the steps to order a delicious pizza that fits your liking
+        </h3>
+    </header>
+
+    <section>
+        <br>
+        <h2 style="color:red;">
+            STEP 1. Pick The Size For Your Pizza
+        </h2>
+        <form id="pizzaSize">
+            <input type="radio" id="small" name="size" value="small">
+            <label for="small"> Small</label><br>
+            <input type="radio" id="medium" name="size" value="medium">
+            <label for="medium"> Medium</label><br>
+            <input type="radio" id="large" name="size" value="large">
+            <label for="large"> Large</label><br>
+        </form>
+    </section> 
+
+    <section>
+        <h2 style="color:gold;">
+            STEP 2. Pick Type of Crust
+        </h2>
+        <form id="crustType">
+            <input type="radio" id="neapolitan" name="crust" value="neapolitan">
+            <label for="neapolitan"> Neapolitan Style Crust</label><br>
+            <input type="radio" id="newYork" name="crust" value="New York">
+            <label for="newYork"> New York Style Crust </label><br>
+            <input type="radio" id="chicago" name="crust" value="chicago">
+            <label for="chicago"> Chicago Style Crust</label><br>
+            <input type="radio" id="stLouis" name="crust" value="St. Louis">
+            <label for="stLouis"> St. Louis Style Crust</label><br>
+        </form>
+    </section>
+
+    <section>
+    <stlye>
+        <h2 style="color:firebrick;">
+            STEP 3. Pick Toppings
+        </h2>
+        <form id="toppingList">   
+            <input type="checkbox" id="cheese" name="toppings" value="cheese">
+            <label for="cheese"> Just A Cheese Pizza</label><br>
+            <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+            <label for="pepperoni"> Pepperoni</label><br>
+            <input type="checkbox" id="sausage" name="toppings" value="sausage">
+            <label for="sausage"> Sausage</label><br>
+            <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
+            <label for="pineapple"> Pineapple</label><br>
+            <input type="checkbox" id="jalapenos" name="toppings" value="jalapenos">
+            <label for="jalapenos"> Jalapenos</label><br>
+            <input type="checkbox" id="olives" name="toppings" value="olives">
+            <label for="olives"> Black Olives</label><br>
+            <input type="checkbox" id="bacon" name="toppings" value="bacon">
+            <label for="bacon"> Bacon</label><br>
+            <input type="checkbox" id="onion" name="toppings" value="onion">
+            <label for="onion"> Onions</label><br>
+            <input type="checkbox" id="mushroons" name="toppings" value="mushroons">
+            <label for="mushroons"> Mushroons</label><br>
+            <input type="checkbox" id="ham" name="toppings" value="ham">
+            <label for="ham"> Ham</label><br>
+            <input type="checkbox" id="chicken" name="toppings" value="chicken">
+            <label for="chicken"> Chicken</label><br>
+            <input type="checkbox" id="bbqSauce" name="toppings" value="bbq sauce">
+            <label for="bbqSauce"> Barbaque Sauce</label><br>
+            <input type="checkbox" id="bellPeppers" name="toppings" value="bell peppers">
+            <label for="bellPeppers"> Bell Peppers </label><br>
+            <input type="checkbox" id="basil" name="toppings" value="basil">
+            <label for="basil"> Basil</label><br>
+            <input type="checkbox" id="extraCheese" name="toppings" value="extra cheese">
+            <label for="extraCheese"> Extra Cheese</label><br>
+        </form>
+    </stlye>
+    </section>
+
+    <section>
+        <h2 style="color:darkgreen;">
+            STEP 4. Select Payment Method
+        </h2>
+        <form id="paymentType">
+            <input type="radio" id="card" name="pay" value="card">
+            <label for="card"> Credit Card</label><br>
+            <h5>
+                OR
+            </h5>
+            <input type="radio" id="cash" name="pay" value="cash">
+            <label for="cash"> Cash</label><br>
+            <h5>
+                OR
+            </h5>
+            <input type="radio" id="applePay" name="pay" value="apple pay">
+            <label for="applePay"> Apple Pay</label><br>
+            <br>
+            <button type="button" id="button"> Confirm</button>
+        </form>
+    </section>
+</body>
+</html>

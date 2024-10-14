@@ -1,0 +1,29 @@
+/*  JavaScript 7th Edition
+    Chapter 6
+    Hands-on Project 6-1
+
+    Filename: styles.css
+*/
+
+/* apply a natural box layout model to all elements */
+
+h1 {
+    background-color: red;
+    color: ghostwhite;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: darkgreen;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+h5 {
+    color: darkgreen;
+}
+
+section {
+    background-color:blanchedalmond;
+}
