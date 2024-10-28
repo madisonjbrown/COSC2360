@@ -1,6 +1,6 @@
-/*  JavaScript 6th Edition
-    Chapter 1
-    Hands-on Project 1-5
+/*  JavaScript 7th Edition
+    Chapter 8
+    Hands-on Project 8-5
 
     Filename: styles.css
 */
@@ -42,19 +42,10 @@ footer, header, hgroup, menu, nav, section {
 
 body {
    line-height: 1;
-   max-width: 640px;
+   width: 960px;
    background: white;
    margin: 0 auto;
-   font-family: Arial, Helvetica, sans-serif; 
-   -webkit-box-shadow: 10px 0px 10px rgba(50, 50, 50, 1),
-                       0px 10px 10px rgba(50, 50, 50, 1),
-                       -10px 0px 10px rgba(50, 50, 50, 1);
-   -moz-box-shadow:    10px 0px 10px rgba(50, 50, 50, 1),
-                       0px 10px 10px rgba(50, 50, 50, 1),
-                       -10px 0px 10px rgba(50, 50, 50, 1);
-   box-shadow:         10px 0px 10px rgba(50, 50, 50, 1),
-                       0px 10px 10px rgba(50, 50, 50, 1),
-                       -10px 0px 10px rgba(50, 50, 50, 1);
+   font-family: Verdana, Geneva, sans-serif; 
 }
 
 ol, ul {
@@ -63,26 +54,155 @@ ol, ul {
 
 /* page header */
 header {
-   background: #329D27;
+   background: #5472B2;
    width: 100%;
    color: #FFFFFF;
    font-size: 48px;
    text-align: center;
    line-height: 1.5em;
-   border-bottom: 1px solid black;
+   margin-bottom: 0;
 }
 
-/* main content */
-article {
-   width: 640px;
+
+
+/*-------------------- Project Styles ------------------*/
+
+section {
+   background-color: #FFDB70;
+   margin-top: 0;
+   padding-bottom: 20px;
+   user-select:none;
+   height: 720px;
+   position: relative;
+}
+
+section h1 {
+   font-size: 2.8em;
    text-align: center;
-   background: ivory;
-   padding: 20px;
+   margin: 0;
+   padding: 20px 0 20px;
 }
 
-h2 {
+p#intro {
+   padding: 10px 0 0 0;
+   text-align: center;
+}
+
+p#intro label {
+   display: inline-block;
+   margin-right: 10px;
+   font-size: 1.2em;
+}
+
+p#intro input {
+   font-size: 1em;
+}
+
+p#description {
+   margin-left: 60px;
+}
+
+table#chessboard {
+   border-collapse: collapse;
+   border: 3px solid gray;
+   margin: 0 0 0 60px;
+}
+
+table#chessboard td {
+   width: 50px;
+   height: 50px;
+   text-align: center;
+   vertical-align: middle;
    font-weight: bold;
-   font-size: 30px;
+}
+
+table#chessboard td.dark {
+   background-color: rgba(163,110,42,0.3);
+   border: 1px solid gray;
+}
+
+table#chessboard td.light {
+   background-color: rgba(233,231,206,1.00);
+   border: 1px solid gray;
+}
+
+table#chessboard td.notation {
+   background-color: ivory;
+   vertical-align: middle;
+}
+
+table#chessboard td.row {
+   height: 25px;
+}
+
+table#chessboard td.col {
+   width: 25px;
+}
+
+table#chessboard td span {
+   font-size: 2.6em;
+}
+
+table#chessboard td span.white {
+   text-shadow: 0px 3px 2px white;
+}
+
+div#moveButtons {
+   width: 430px;
+   margin: 10px 0 0 60px;
    text-align: center;
 }
 
+div#moveButtons input {
+   width: 150px;
+   font-size: 0.9em;
+}
+
+aside#moveList {
+   width: 400px;
+   height: 500px;
+   position: absolute;
+   left: 520px;
+   top: 200px;
+}
+
+aside#moveList h1 {
+   font-size: 1.3em;
+   text-align: center;
+}
+
+ol#moveLog {
+   list-style: decimal;
+   display: flex;
+   flex-flow: column wrap;
+   height: 500px;
+   line-height: 1.5;
+}
+
+ol#moveLog li {
+   margin: 0 10px;
+   padding: 0 10px;
+   font-size: 0.8em;
+   width: 200px;
+}
+
+ol#moveLog li span {
+   text-align: left;
+   display: inline-block;
+   width: 50%;
+}
+
+ol#moveLog li span.highlight {
+   color: red;
+}
+
+div#blackBox, div#whiteBox {
+   margin: 10px 0 10px 60px;
+   font-size: 1.8em;
+   height: 1em;
+}
+
+div#blackBox span, div#whiteBox span {
+   display: inline-block;
+   background-color: ivory;
+}
