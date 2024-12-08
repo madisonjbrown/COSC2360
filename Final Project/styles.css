@@ -1,0 +1,64 @@
+/*  JavaScript 7th Edition
+    Final
+    Final Project
+    Final Project
+
+    Author: Madison Brown
+    Date: 12/6/24
+    Filename: styles.css
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: mintcream;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.map-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h3 {
+    text-align: center;
+
+}
+
+h1 {
+    width: 20%;
+    text-align: center;
+    padding-right: 200px;
+}
+div#userMap {
+    height: 350px;
+    width: 100%;
+}
+
+div#cityMap {
+    height: 350px;
+    width: 100%;
+}
+
+.landmarkSelection {
+    align-items: flex-end;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-right: 70px;
+    padding-left: 30px;
+}
